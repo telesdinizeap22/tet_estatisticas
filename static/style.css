@@ -1,0 +1,84 @@
+/* Grid mais compacto */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+}
+
+/* Card mais enxuto */
+.card {
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+/* Cabeçalho menor */
+.card-header {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Corpo do card mais compacto */
+.card-body {
+    padding: 8px 10px;
+}
+
+/* Linhas do ranking */
+.card-body .d-flex {
+    font-size: 0.82rem;
+    line-height: 1.2;
+}
+
+/* Títulos */
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .card {
+        font-size: 0.8rem;
+    }
+}
+/* ==========================
+   AJUSTE GLOBAL DO LAYOUT
+   ========================== */
+
+/* Compensa a navbar fixed-top */
+.main-content {
+    padding-top: 90px;
+}
+
+/* Cards mais compactos e profissionais */
+.card {
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.card-header {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 0.6rem 0.75rem;
+}
+
+/* Grid mais eficiente */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+/* Mobile refinado */
+@media (max-width: 768px) {
+    .card {
+        font-size: 0.85rem;
+    }
+}
